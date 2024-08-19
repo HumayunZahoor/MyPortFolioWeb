@@ -34,7 +34,7 @@ const transporter = nodemailer.createTransport({
     const mailOptions = {
         from: email,
         to: 'humayuncs009@gmail.com',
-        subject: 'Contact Form Submission (PORTFOLIO)',
+        subject: 'Contact Form (PORTFOLIO)',
         html: `
           <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; border-radius: 8px;">
             <h2 style="color: #333;">Contact Form Submission</h2>
