@@ -81,7 +81,7 @@ const MyProjects = () => {
   return (
     <div className="my-projects-container flex flex-col items-center text-white bg-gray-900 min-h-screen p-5">
       <h1 className="text-3xl sm:text-4xl text-yellow-500 font-bold mt-8 mb-10">Major Projects</h1>
-      <div className="projects-list flex flex-col items-center gap-12 w-full max-w-screen-md mx-auto">
+      <div className="projects-list flex flex-col items-center gap-12 w-full max-w-screen-lg mx-auto">
         {projects.map((project, index) => (
           <div 
             key={index} 
@@ -93,15 +93,15 @@ const MyProjects = () => {
               className="project-header cursor-pointer" 
               onClick={() => handleProjectClick(index)}
             >
-              <h2 className="text-3xl font-bold mb-3 text-center text-yellow-500">{project.title}</h2>
-              <div className="w-[500px] h-[auto] mx-auto overflow-hidden rounded-lg shadow-lg mb-5 transform transition-transform duration-300 hover:scale-105">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-center text-yellow-500">{project.title}</h2>
+              <div className="w-full h-auto mx-auto overflow-hidden rounded-lg shadow-lg mb-5 transform transition-transform duration-300 hover:scale-105">
               <img 
                 src={project.images[0]} 
                 alt={project.title} 
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-64 sm:h-80 md:h-96 lg:h-[500px]"
                 />
               </div>
-              <p className="text-lg text-gray-300">
+              <p className="text-base sm:text-lg text-gray-300">
                 {activeProject === index ? project.description : `${project.description.substring(0, 100)}...`}
               </p>
             </div>
@@ -119,11 +119,11 @@ const MyProjects = () => {
                   nextArrow: <CustomNextArrow />,
                 }}>
                   {project.images.map((image, idx) => (
-                    <div key={idx} className="w-[500px] h-[auto] mx-auto overflow-hidden rounded-lg shadow-lg mb-5 transform transition-transform duration-300 hover:scale-105">
+                    <div key={idx} className="w-full h-auto mx-auto overflow-hidden rounded-lg shadow-lg mb-5 transform transition-transform duration-300 hover:scale-105">
                       <img 
                         src={image} 
                         alt={`${project.title} ${idx + 1}`} 
-                        className="object-cover w-full h-full"
+                        className="object-cover w-full h-64 sm:h-80 md:h-96 lg:h-[500px]"
                       />
                     </div>
                   ))}

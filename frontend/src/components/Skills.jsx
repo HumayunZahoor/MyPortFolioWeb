@@ -69,24 +69,26 @@ const Skills = () => {
 
   return (
     <div className="flex flex-col items-center text-white bg-gray-900 min-h-screen p-5">
-      <h1 className="text-3xl sm:text-4xl text-yellow-500 font-bold mt-8 mb-10">Mastering the Art of Web Development</h1>
+      <h1 className="text-2xl sm:text-3xl md:text-4xl text-yellow-500 font-bold mt-8 mb-10 text-center">
+        Mastering the Art of Web Development
+      </h1>
       <p
         ref={textRef}
-        className="text-center mb-10 text-2xl whitespace-nowrap"
+        className="text-center mb-10 text-lg sm:text-xl md:text-2xl whitespace-nowrap overflow-hidden"
       >
         "Building state-of-the-art web applications with the MERN stack, based in Rawalpindi, Pakistan, with a Bachelor's in Computer Science (2024)."
       </p>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-5">
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            className="skill-item flex flex-col items-center bg-black p-4 rounded-lg"
+            className="skill-item flex flex-col items-center bg-black p-3 sm:p-4 rounded-lg"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <img src={skill.icon} alt={skill.name} className="skill-icon rounded-lg w-16 h-16 mb-2"/>
-            <h2 className="text-lg font-semibold">{skill.name}</h2>
+            <img src={skill.icon} alt={skill.name} className="skill-icon rounded-lg w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mb-2"/>
+            <h2 className="text-sm sm:text-md md:text-lg font-semibold text-center">{skill.name}</h2>
           </motion.div>
         ))}
       </div>

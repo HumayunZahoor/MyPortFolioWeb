@@ -2,13 +2,12 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { CSSTransition } from 'react-transition-group';
 import anime from 'animejs';
-import './css_folder/Home.css'; // Custom CSS file for animations
-import profileImage from './pictures/homepage.jpeg'; // Adjust the path to your profile image
-import cvFile from './pictures/cv.pdf'; // Adjust the path to your CV file
+import './css_folder/Home.css';
+import profileImage from './pictures/homepage.jpeg';
+import cvFile from './pictures/cv.pdf';
 
 const Home = () => {
   useEffect(() => {
-    // Profile image animation
     anime({
       targets: '.profile-image',
       translateY: [-50, 0],
@@ -17,7 +16,6 @@ const Home = () => {
       easing: 'easeInOutExpo',
     });
 
-    // Letter by letter animation for the name
     anime({
       targets: '.name-letter',
       opacity: [0, 1],
@@ -26,7 +24,6 @@ const Home = () => {
       duration: 1000,
       delay: anime.stagger(100),
       complete: () => {
-        // Sequentially animate h2 and paragraph
         anime({
           targets: '.role-letter',
           opacity: [0, 1],
@@ -72,15 +69,14 @@ const Home = () => {
   ));
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-6">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between p-6">
-        {/* Left Section: Text */}
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-4 md:p-6">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 p-4 md:p-6">
         <div className="md:w-1/2 mb-6 md:mb-0 text-center md:text-left">
           <motion.div
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-sm font-light uppercase mb-2"
+            className="text-xs sm:text-sm font-light uppercase mb-2"
           >
             Welcome to my world
           </motion.div>
@@ -89,27 +85,26 @@ const Home = () => {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-5xl font-bold mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
           >
             Hi, I'm <span className="text-yellow-500">{nameLetters}</span>
           </motion.h1>
 
-          <h2 className="text-2xl font-medium mb-6">{roleLetters}</h2>
+          <h2 className="text-xl sm:text-2xl font-medium mb-6">{roleLetters}</h2>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="max-w-lg mx-auto md:mx-0 mb-6 leading-relaxed"
+            className="max-w-full sm:max-w-lg mx-auto md:mx-0 mb-6 leading-relaxed text-xs sm:text-sm md:text-base"
           >
             {descriptionLetters}
           </motion.p>
 
-          {/* Button section */}
           <div className="flex flex-col md:flex-row justify-center md:justify-start space-y-2 md:space-y-0 md:space-x-4">
             <CSSTransition in appear timeout={300} classNames="fade">
               <motion.a href={cvFile} target="_blank" rel="noopener noreferrer" download>
-                <button className="bg-yellow-500 text-white px-6 py-3 rounded-lg hover:bg-yellow-700 transition duration-300 font-bold">
+                <button className="bg-yellow-500 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg hover:bg-yellow-700 transition duration-300 font-bold text-xs sm:text-sm md:text-base">
                   Download Resume
                 </button>
               </motion.a>
@@ -117,7 +112,7 @@ const Home = () => {
 
             <CSSTransition in appear timeout={300} classNames="fade">
               <motion.a href="https://wa.me/+923099001485" target="_blank" rel="noopener noreferrer">
-                <button className="bg-yellow-500 text-white px-6 py-3 rounded-lg hover:bg-yellow-700 transition duration-300 font-bold">
+                <button className="bg-yellow-500 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg hover:bg-yellow-700 transition duration-300 font-bold text-xs sm:text-sm md:text-base">
                   Chat on WhatsApp
                 </button>
               </motion.a>
@@ -125,12 +120,11 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Right Section: Image */}
-        <div className="relative group md:w-1/2">
+        <div className="relative group md:w-1/2 flex justify-center">
           <motion.img
             src={profileImage}
             alt="Profile"
-            className="profile-image rounded-lg shadow-2xl w-72 h-96 object-cover border-4 border-gray-800 group-hover:shadow-lg transition-shadow duration-300 mx-auto"
+            className="profile-image rounded-lg shadow-2xl w-52 h-72 sm:w-60 sm:h-80 md:w-72 md:h-96 object-cover border-4 border-gray-800 group-hover:shadow-lg transition-shadow duration-300 mx-auto"
             whileHover={{
               scale: 1.1,
               rotateY: 10,
