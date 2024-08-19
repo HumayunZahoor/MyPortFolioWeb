@@ -1,0 +1,82 @@
+[
+    {
+        "id": 0,
+        "title": "Ecommerce Website",
+        "description": "Developed an online store with dynamic and complete functionality using MERN technologies. Styled the website using Tailwind CSS and incorporated animations for a better user experience.",
+        "images": [
+            "./pictures/humayun.jpg",
+            "./pictures/humayun.jpg",
+            "./pictures/humayun.jpg"
+        ]
+    },
+    {
+        "id": 1,
+        "title": "Dental Disease Detection System",
+        "description": "Developed complete user authentication and user interface using MERN technologies and Tailwind CSS. Integrated Flask API into the frontend to enhance the system's functionality.",
+        "images": [
+            "./pictures/humayun.jpg",
+            "./pictures/humayun.jpg",
+            "./pictures/humayun.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Brain Disease Detection System",
+        "description": "Developed complete user authentication and user interface using MERN technologies and Tailwind CSS. Integrated Flask API into the frontend to provide comprehensive detection capabilities.",
+        "images": [
+            "./pictures/humayun.jpg",
+            "./pictures/humayun.jpg",
+            "./pictures/humayun.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Kidney Disease Detection System",
+        "description": "Developed complete user authentication and user interface using MERN technologies and Tailwind CSS. Integrated Flask API into the frontend for accurate disease detection.",
+        "images": [
+            "./pictures/humayun.jpg",
+            "./pictures/humayun.jpg",
+            "./pictures/humayun.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Skin Disease Detection System",
+        "description": "Developed complete user authentication and user interface using MERN technologies and Tailwind CSS. Integrated Flask API into the frontend to facilitate skin disease detection.",
+        "images": [
+            "./pictures/humayun.jpg",
+            "./pictures/humayun.jpg",
+            "./pictures/humayun.jpg"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Project Alpha",
+        "description": "Developed a cutting-edge application with advanced features and functionalities using the MERN stack and Tailwind CSS.",
+        "images": [
+            "./pictures/humayun.jpg",
+            "./pictures/humayun.jpg",
+            "./pictures/humayun.jpg"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Project Beta",
+        "description": "Created a robust and scalable web application utilizing the MERN stack and integrated several third-party APIs to enhance user experience.",
+        "images": [
+            "./pictures/humayun.jpg",
+            "./pictures/humayun.jpg",
+            "./pictures/humayun.jpg"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Project Gamma",
+        "description": "Engineered a highly interactive and user-friendly web application using MERN technologies and Tailwind CSS, focusing on performance and scalability.",
+        "images": [
+            "./pictures/humayun.jpg",
+            "./pictures/humayun.jpg",
+            "./pictures/humayun.jpg"
+        ]
+    }
+]

@@ -1,0 +1,51 @@
+/* css_folder/Menu.css */
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.fade-appear-active,
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s, transform 1s;
+}
+.menu-border {
+   /* border-bottom: 2px solid yellow;  You can adjust the color and thickness */
+   padding-top: 8px;
+  }
+  
+  .logo {
+    margin-left: 36px; /* Adds margin to the left of the logo */
+  }
+  
+  .md\:mr-4 {
+    margin-right: 36px; /* Adds margin to the right of the ContactMe link */
+  }
+  
+  .group:hover .group-hover\:scale-x-100 {
+    transform: scaleX(1);
+  }
+  
+  .group:hover .group-hover\:text-yellow-300 {
+    color: #ffeb3b;
+  }
+  
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 1000ms;
+  }
+  

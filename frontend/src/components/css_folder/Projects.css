@@ -1,0 +1,75 @@
+.my-projects-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-item {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(255, 255, 0, 0.6);
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 2rem;
+  color: #ffc107;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.slick-prev {
+  left: -25px;
+}
+
+.slick-next {
+  right: -25px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #ffeb3b;
+}
+
+.custom-arrow {
+  font-size: 2rem;
+  color: #ffc107;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.custom-prev {
+  left: -25px;
+}
+
+.custom-next {
+  right: -25px;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .slick-prev {
+    left: -15px;
+  }
+  .slick-next {
+    right: -15px;
+  }
+}

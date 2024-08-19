@@ -1,0 +1,51 @@
+/* Styles for skill items and their hover effects */
+.skill-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+.skill-icon {
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover .skill-icon {
+  transform: rotate(10deg);
+}
+
+/* Styles for degree images in the slider */
+.degree-image {
+  width: 100%;        
+  height: auto;       
+ 
+}
+
+
+/* Ensure that the slider buttons are visible */
+.slick-prev, .slick-next {
+  z-index: 1;                
+}
+
+/* Adjust button position */
+.slick-prev {
+  left: 10px;                  
+  margin-left: 7px;
+}
+
+.slick-next {
+  right: 10px;                 
+  margin-right: 7px;
+}
+
+/* 3D effect for degree items */
+.degree-item {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.degree-item:hover {
+  transform: rotateY(20deg) translateZ(30px);
+}
