@@ -71,7 +71,7 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-4 md:p-6">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 p-4 md:p-6">
-        <div className="md:w-1/2 mb-6 md:mb-0 text-center md:text-left">
+        <div className="text-center md:text-left flex flex-col items-center md:items-start">
           <motion.div
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -120,11 +120,11 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="relative group md:w-1/2 flex justify-center">
+        <div className="relative group flex justify-center mt-8 md:mt-0">
           <motion.img
             src={profileImage}
             alt="Profile"
-            className="profile-image rounded-lg shadow-2xl w-52 h-[700px] sm:w-60 sm:h-80 md:w-72 md:h-96 object-cover border-4 border-gray-800 group-hover:shadow-lg transition-shadow duration-300 mx-auto"
+            className="profile-image rounded-lg shadow-2xl object-cover border-4 border-gray-800 group-hover:shadow-lg transition-shadow duration-300 mx-auto"
             whileHover={{
               scale: 1.1,
               rotateY: 10,

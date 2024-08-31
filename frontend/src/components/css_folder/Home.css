@@ -16,4 +16,9 @@
     transition: opacity 300ms;
   }
 
- 
+  
+.profile-image {
+  object-fit: cover; 
+  width: 400px;
+  height: 500px; 
+}
