@@ -45,7 +45,7 @@ const Menu = () => {
           whileHover={{ scale: 1.05 }}
           transition={{ type: 'spring', stiffness: 300 }}
         >
-          PortFolio
+          <Link to='/' >PortFolio</Link>
         </motion.h1>
       </div>
 
