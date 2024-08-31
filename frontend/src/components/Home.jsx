@@ -124,7 +124,7 @@ const Home = () => {
           <motion.img
             src={profileImage}
             alt="Profile"
-            className="profile-image rounded-lg shadow-2xl w-52 h-72 sm:w-60 sm:h-80 md:w-72 md:h-96 object-cover border-4 border-gray-800 group-hover:shadow-lg transition-shadow duration-300 mx-auto"
+            className="profile-image rounded-lg shadow-2xl w-52 h-[700px] sm:w-60 sm:h-80 md:w-72 md:h-96 object-cover border-4 border-gray-800 group-hover:shadow-lg transition-shadow duration-300 mx-auto"
             whileHover={{
               scale: 1.1,
               rotateY: 10,

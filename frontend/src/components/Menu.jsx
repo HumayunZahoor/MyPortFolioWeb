@@ -37,7 +37,7 @@ const Menu = () => {
   ];
 
   return (
-    <nav className="flex justify-between items-center p-3 bg-gray-900 text-white shadow-lg">
+    <nav className="flex justify-between items-center p-3 bg-gray-900 text-white shadow-lg relative">
       {/* Logo and Portfolio Heading */}
       <div className="ml-4">
         <motion.h1 
@@ -110,7 +110,7 @@ const Menu = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-16 right-0 bg-gray-900 text-white shadow-lg w-full md:w-auto z-50">
+        <div className="absolute top-16 right-0 bg-gray-900 text-white shadow-lg w-full md:w-auto z-50 overflow-hidden">
           <ul className="flex flex-col space-y-2 p-4 text-center">
             {links.map((link, index) => (
               <li key={index} className="relative group list-none">
