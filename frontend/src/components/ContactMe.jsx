@@ -13,7 +13,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await fetch('http://localhost:3001/send-email', {
+      await fetch('https://portfolio-backend-pink-nu.vercel.app//send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
