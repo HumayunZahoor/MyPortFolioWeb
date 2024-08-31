@@ -7,7 +7,7 @@ import nodemailer from 'nodemailer';
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: ["https://humayun-portfolio.vercel.app/"],
+    origin: ["https://humayun-portfolio.vercel.app"],
     method: ["GET", "POST"],
     credentials: true
 }));
