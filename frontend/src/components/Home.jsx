@@ -69,7 +69,7 @@ const Home = () => {
   ));
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-4 md:p-6">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-custom-gray text-white p-4 md:p-6 font-serif">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 p-4 md:p-6">
         <div className="text-center md:text-left flex flex-col items-center md:items-start">
           <motion.div
@@ -87,7 +87,7 @@ const Home = () => {
             transition={{ duration: 0.7 }}
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
           >
-            Hi, I'm <span className="text-yellow-500">{nameLetters}</span>
+            Hi, I'm <span className="text-custom-orange">{nameLetters}</span>
           </motion.h1>
 
           <h2 className="text-xl sm:text-2xl font-medium mb-6">{roleLetters}</h2>
@@ -104,7 +104,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row justify-center md:justify-start space-y-2 md:space-y-0 md:space-x-4">
             <CSSTransition in appear timeout={300} classNames="fade">
               <motion.a href={cvFile} target="_blank" rel="noopener noreferrer" download>
-                <button className="bg-yellow-500 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg hover:bg-yellow-700 transition duration-300 font-bold text-xs sm:text-sm md:text-base">
+                <button className="bg-custom-orange text-white px-4 py-2 md:px-6 md:py-3 rounded-lg hover:bg-yellow-700 transition duration-300 font-bold text-xs sm:text-sm md:text-base">
                   Download Resume
                 </button>
               </motion.a>
@@ -112,7 +112,7 @@ const Home = () => {
 
             <CSSTransition in appear timeout={300} classNames="fade">
               <motion.a href="https://wa.me/+923099001485" target="_blank" rel="noopener noreferrer">
-                <button className="bg-yellow-500 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg hover:bg-yellow-700 transition duration-300 font-bold text-xs sm:text-sm md:text-base">
+                <button className="bg-custom-orange text-white px-4 py-2 md:px-6 md:py-3 rounded-lg hover:bg-yellow-700 transition duration-300 font-bold text-xs sm:text-sm md:text-base">
                   Chat on WhatsApp
                 </button>
               </motion.a>

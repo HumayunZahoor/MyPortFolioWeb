@@ -37,11 +37,11 @@ const Menu = () => {
   ];
 
   return (
-    <nav className="flex justify-between items-center p-3 bg-gray-900 text-white shadow-lg relative">
+    <nav className="flex justify-between items-center p-3 bg-custom-gray text-white shadow-lg relative font-serif">
       {/* Logo and Portfolio Heading */}
       <div className="ml-4">
         <motion.h1 
-          className="portfolio-heading text-2xl sm:text-3xl font-bold text-yellow-500"
+          className="portfolio-heading text-2xl sm:text-3xl font-bold text-custom-orange font-serif"
           whileHover={{ scale: 1.05 }}
           transition={{ type: 'spring', stiffness: 300 }}
         >
@@ -60,11 +60,11 @@ const Menu = () => {
             >
               <Link
                 to={link.path}
-                className="text-white hover:text-yellow-300 transition-colors duration-300"
+                className="text-white hover:text-custom-orange transition-colors duration-300"
               >
                 {link.displayText}
               </Link>
-              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-yellow-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right"></span>
+              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-custom-orange transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right"></span>
             </motion.div>
           </li>
         ))}
@@ -87,11 +87,11 @@ const Menu = () => {
               >
                 <Link
                   to="/ContactMe"
-                  className="text-white hover:text-yellow-300 transition-colors duration-300"
+                  className="text-white hover:text-custom-orange transition-colors duration-300"
                 >
                   Reach Out
                 </Link>
-                <span className="absolute left-0 bottom-0 w-full h-0.5 bg-yellow-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right"></span>
+                <span className="absolute left-0 bottom-0 w-full h-0.5 bg-custom-orange transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right"></span>
               </motion.div>
             </CSSTransition>
           </li>
@@ -121,11 +121,11 @@ const Menu = () => {
                 >
                   <Link
                     to={link.path}
-                    className="hover:text-yellow-300 transition-colors duration-300"
+                    className="hover:text-custom-orange transition-colors duration-300"
                   >
                     {link.displayText}
                   </Link>
-                  <span className="absolute left-0 bottom-0 w-full h-0.5 bg-yellow-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right"></span>
+                  <span className="absolute left-0 bottom-0 w-full h-0.5 bg-custom-orange transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right"></span>
                 </motion.div>
               </li>
             ))}
@@ -143,11 +143,11 @@ const Menu = () => {
                 >
                   <Link
                     to="/ContactMe"
-                    className="hover:text-yellow-300 transition-colors duration-300"
+                    className="hover:text-custom-orange transition-colors duration-300"
                   >
                     Reach Out
                   </Link>
-                  <span className="absolute left-0 bottom-0 w-full h-0.5 bg-yellow-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right"></span>
+                  <span className="absolute left-0 bottom-0 w-full h-0.5 bg-custom-orange transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right"></span>
                 </motion.div>
               </CSSTransition>
             </li>

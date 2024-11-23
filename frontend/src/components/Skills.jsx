@@ -12,30 +12,36 @@ import jsIcon from './pictures/javascript-1.svg';
 import reactIcon from './pictures/react-2.svg';
 import nodeIcon from './pictures/nodejs.svg';
 import expressIcon from './pictures/expressjs.svg';
-import jwtIcon from './pictures/jwt2.png'
+// import jwtIcon from './pictures/jwt2.png'
 import mongoIcon from './pictures/mongodb.svg';
 import mysqlIcon from './pictures/mysql.png';
 import apiIcon from './pictures/api1.png';
 import tailwindIcon from './pictures/tailwind.svg';
 import githubIcon from './pictures/github.svg';
-import contextIcon from './pictures/react-2.svg';
+// import contextIcon from './pictures/react-2.svg';
 import reduxtkIcon from './pictures/redux.svg';
+import laravelIcon from './pictures/laravel.svg';
+import vueIcon from './pictures/vue.svg';
+import nextIcon from './pictures/next.svg'
 
 const skills = [
   { name: "HTML5", icon: htmlIcon },
   { name: "CSS3", icon: cssIcon },
   { name: "JavaScript", icon: jsIcon },
   { name: "React JS", icon: reactIcon },
-  { name: "Context API", icon: contextIcon },
+  // { name: "Context API", icon: contextIcon },
   { name: "Redux ToolKit", icon: reduxtkIcon },
   { name: "Node JS", icon: nodeIcon },
   { name: "Express JS", icon: expressIcon },
-  { name: "JSON WEB TOKEN", icon: jwtIcon },
+  // { name: "JSON WEB TOKEN", icon: jwtIcon },
   { name: "MongoDB", icon: mongoIcon },
   { name: "MySQL", icon: mysqlIcon },
   { name: "API Integration", icon: apiIcon },
   { name: "Tailwind CSS", icon: tailwindIcon },
   { name: "GitHub", icon: githubIcon },
+  { name: "Laravel", icon: laravelIcon },
+  { name: "Vue JS", icon: vueIcon },
+  { name: "Next JS", icon: nextIcon },
 ];
 
 const Skills = () => {
@@ -68,8 +74,8 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center text-white bg-gray-900 min-h-screen p-5">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl text-yellow-500 font-bold mt-8 mb-10 text-center">
+    <div className="flex flex-col items-center text-white bg-custom-gray min-h-screen p-5 font-serif">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl text-custom-orange font-bold mt-8 mb-10 text-center">
         Mastering the Art of Web Development
       </h1>
       <p

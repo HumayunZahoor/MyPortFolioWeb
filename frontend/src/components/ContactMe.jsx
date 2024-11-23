@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-4 sm:p-6 md:p-8 lg:p-10">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-custom-gray font-serif text-white p-4 sm:p-6 md:p-8 lg:p-10">
       <div className="container mx-auto p-3 sm:p-3 md:p-3 lg:p-3">
         <motion.div
           initial={{ opacity: 0, y: -30 }}
@@ -36,7 +36,7 @@ const Contact = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-4 sm:mb-6 md:mb-8 lg:mb-10"
         >
-          <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl text-yellow-500 font-bold mb-1">
+          <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl text-custom-orange font-bold mb-1">
             Contact Me
           </h1>
           <p className="text-sm sm:text-lg md:text-xl lg:text-2xl">
@@ -58,7 +58,7 @@ const Contact = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full p-2 sm:p-3 md:p-4 bg-gray-800 rounded-lg border-2 border-gray-700 focus:outline-none focus:border-yellow-500 transition duration-300"
+              className="w-full p-2 sm:p-3 md:p-4 bg-gray-800 rounded-lg border-2 border-gray-700 focus:outline-none focus:border-custom-ortext-custom-orange transition duration-300"
             />
           </div>
 
@@ -72,7 +72,7 @@ const Contact = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full p-2 sm:p-3 md:p-4 bg-gray-800 rounded-lg border-2 border-gray-700 focus:outline-none focus:border-yellow-500 transition duration-300"
+              className="w-full p-2 sm:p-3 md:p-4 bg-gray-800 rounded-lg border-2 border-gray-700 focus:outline-none focus:border-custom-ortext-custom-orange transition duration-300"
             />
           </div>
 
@@ -86,14 +86,14 @@ const Contact = () => {
               rows="4"
               value={formData.message}
               onChange={handleChange}
-              className="w-full p-2 sm:p-3 md:p-4 bg-gray-800 rounded-lg border-2 border-gray-700 focus:outline-none focus:border-yellow-500 transition duration-300"
+              className="w-full p-2 sm:p-3 md:p-4 bg-gray-800 rounded-lg border-2 border-gray-700 focus:outline-none focus:border-custom-ortext-custom-orange transition duration-300"
             ></motion.textarea>
           </div>
 
           <div className="text-center">
             <motion.button
               type="submit"
-              className="bg-yellow-500 text-white px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg hover:bg-yellow-700 transition duration-300"
+              className="bg-custom-orange text-white px-4 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 rounded-lg text-xl hover:bg-orange-700 transition duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -119,7 +119,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/humayun-zahoor/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-yellow-300 hover:text-yellow-500 transition duration-300 text-sm sm:text-lg md:text-xl"
+            className="text-custom-orange transition duration-300 text-sm sm:text-lg md:text-xl hover:underline"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
