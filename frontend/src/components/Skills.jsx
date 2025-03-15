@@ -74,7 +74,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center text-white bg-custom-gray min-h-screen p-5 font-serif">
+    <div className="flex flex-col items-center text-white bg-custom-gray min-h-screen p-5 font-serif relative">
       <h1 className="text-2xl sm:text-3xl md:text-4xl text-custom-orange font-bold mt-8 mb-10 text-center">
         Mastering the Art of Web Development
       </h1>

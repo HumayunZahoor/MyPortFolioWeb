@@ -69,7 +69,7 @@ const Home = () => {
   ));
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-custom-gray text-white p-4 md:p-6 font-serif">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-custom-gray text-white p-4 md:p-6 font-serif relative">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 p-4 md:p-6">
         <div className="text-center md:text-left flex flex-col items-center md:items-start">
           <motion.div

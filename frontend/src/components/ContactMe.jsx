@@ -13,22 +13,30 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await fetch('https://portfolio-backend-pink-nu.vercel.app/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const urls = [
+        'https://portfolio-backend-pink-nu.vercel.app/send-email',
+        'http://localhost:3001/send-email'
+      ];
+
+      await Promise.all(urls.map(url =>
+        fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        }).catch(error => console.error(`Failed to send email to: ${url}`, error))
+      ));
+
       setStatus('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       setStatus('Failed to send message.');
+      console.error('Error:', error);
     }
+
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-custom-gray font-serif text-white p-4 sm:p-6 md:p-8 lg:p-10">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-custom-gray font-serif text-white p-4 sm:p-6 md:p-8 lg:p-10 relative">
       <div className="container mx-auto p-3 sm:p-3 md:p-3 lg:p-3">
         <motion.div
           initial={{ opacity: 0, y: -30 }}
@@ -105,9 +113,8 @@ const Contact = () => {
         {status && (
           <div className="text-center mt-4 sm:mt-6">
             <p
-              className={`text-sm sm:text-lg md:text-xl font-semibold ${
-                status.includes('Failed') ? 'text-red-500' : 'text-green-500'
-              }`}
+              className={`text-sm sm:text-lg md:text-xl font-semibold ${status.includes('Failed') ? 'text-red-500' : 'text-green-500'
+                }`}
             >
               {status}
             </p>
