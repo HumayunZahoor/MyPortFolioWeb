@@ -21,14 +21,16 @@ import githubIcon from './pictures/github.svg';
 // import contextIcon from './pictures/react-2.svg';
 import reduxtkIcon from './pictures/redux.svg';
 import laravelIcon from './pictures/laravel.svg';
-import vueIcon from './pictures/vue.svg';
+// import vueIcon from './pictures/vue.svg';
 import nextIcon from './pictures/next.svg'
+import postmanIcon from './pictures/postman.svg';
 
 const skills = [
   { name: "HTML5", icon: htmlIcon },
   { name: "CSS3", icon: cssIcon },
   { name: "JavaScript", icon: jsIcon },
   { name: "React JS", icon: reactIcon },
+  { name: "Next JS", icon: nextIcon },
   // { name: "Context API", icon: contextIcon },
   { name: "Redux ToolKit", icon: reduxtkIcon },
   { name: "Node JS", icon: nodeIcon },
@@ -40,8 +42,8 @@ const skills = [
   { name: "Tailwind CSS", icon: tailwindIcon },
   { name: "GitHub", icon: githubIcon },
   { name: "Laravel", icon: laravelIcon },
-  { name: "Vue JS", icon: vueIcon },
-  { name: "Next JS", icon: nextIcon },
+  // { name: "Vue JS", icon: vueIcon },
+  { name: "Postman", icon: postmanIcon },
 ];
 
 const Skills = () => {
